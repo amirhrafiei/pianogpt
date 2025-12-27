@@ -133,7 +133,7 @@ def train_model(midi_folder_path):
 
     model.train()
     print(f"Starting training on {len(midi_paths)} files...")
-    for epoch in range(10):
+    for epoch in range(50):
         total_loss = 0
         for batch in loader:
             x = batch["input_ids"].to(device)
